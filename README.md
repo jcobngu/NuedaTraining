@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/jcobngu/NuedaTraining">
-    <img src="./images/CitiTransparentLogo.png" alt="Logo" width="120" height="80">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Citi.svg/1024px-Citi.svg.png" alt="Logo" width="120" height="80">
   </a>
 
   <h3 align="center">Morgage Payment Application</h3>
@@ -44,7 +44,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]()
 
 This is an application intended to model a full mortage monitoring system. 
 
