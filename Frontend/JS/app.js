@@ -1,1 +1,4 @@
-console.log(fetch("https://localhost:8080/Customer"));
+fetch("http://localhost:8080/customer")
+.then(res => 
+    res.json())
+.then(data => console.log(data));
