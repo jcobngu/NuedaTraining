@@ -3,13 +3,13 @@ package com.example.CustomerRESTApi.model;
 public class Customer {
     private String name;
     private String bank;
-    private double id;
+    private String id;
     private double income;
     private long routingNumber;
     private long accountNumber;
     private int creditScore;
 
-    public Customer(String name, String bank, double id, double income, long routingNumber, long accountNumber, int creditScore) {
+    public Customer(String name, String bank, String id, double income, long routingNumber, long accountNumber, int creditScore) {
         this.name = name;
         this.bank = bank;
         this.id = id;
@@ -34,11 +34,11 @@ public class Customer {
         this.bank = bank;
     }
 
-    public double getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(double id) {
+    public void setId(String id) {
         this.id = id;
     }
 
