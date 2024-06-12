@@ -1,10 +1,19 @@
 async function fetchData(){
     const records = await fetch("http://localhost:8080/customer");
-    const data = records.json();
+    const data = await records.json();
+    console.log("dataaaa", data);
+    let tab = '';
 
-    let tab = ''
 
-    data.forEach(item => function(user){
+    // for (const item of data){
+    //     console.log("id of item", item.id)
+    //     tab += `<tr>
+    //     <td>${item.firstName}</td>
+    //     <td>${item.lastName}</td>
+    //     <td>${item.id}</td>
+    //     </tr>`;
+    // }
+    await data.forEach(item => function(user){
         console.log(item.id)
         tab += `<tr>
         <td>${item.firstName}</td>
@@ -13,7 +22,12 @@ async function fetchData(){
         </tr>`;
     })
 
-    document.getElementById('data-table-body').innerHTML = tab;
+    console.log(document.getElementById('myTbody'))
+    document.getElementById('myTbody').innerHTML = tab;
+
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
 }
 
 fetchData();
